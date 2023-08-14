@@ -67,12 +67,12 @@ The `visualize_data` method generates various visualizations for the dataset, in
 - Pair plots for visualizing relationships between numeric features.
 
 ## Example
-```
+```python
 from auto_eda import EDA
 
 eda_instance = EDA()
 ```
-
+```python
 # Perform exploratory data analysis
 eda_instance.explore_data()
 
