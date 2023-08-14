@@ -13,7 +13,6 @@ The **AutoEDA-Py** module provides a Python-based toolkit for automating Explora
     - [Data Cleaning](#data-cleaning)
     - [Data Visualization](#data-visualization)
 - [Example](#example)
-- [License](#license)
 
 ## Introduction
 
