@@ -67,10 +67,11 @@ The `visualize_data` method generates various visualizations for the dataset, in
 - Pair plots for visualizing relationships between numeric features.
 
 ## Example
+```
+from auto_eda import EDA
 
-```python
-# Replace 'your_dataset.csv' with your actual dataset file path
-eda_instance = AutoEDA('your_dataset.csv')
+eda_instance = EDA()
+```
 
 # Perform exploratory data analysis
 eda_instance.explore_data()
@@ -84,4 +85,3 @@ eda_instance.visualize_data()
 
 
 
- *Please make sure to replace `'your_dataset.csv'` with the actual path to your dataset file and update the installation instructions accordingly if needed.*
