@@ -42,6 +42,7 @@ eda_instance = AutoEDA('your_dataset.csv')
 #### `AutoEDA(file_path)`
 
 The EDA class constructor accepts a file path parameter that points to a CSV or Excel dataset file. It loads the dataset into a pandas DataFrame based on the file extension.
+
 ### Exploratory Data Analysis
 
 #### `explore_data()`
