@@ -1,14 +1,22 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 
 class EDA:
 
-    def __init__(self, file_path):
-        # Load necessary libraries and initialize DataFrame
-        self.df = self.load_dataset(file_path)
+    def __init__(self):
+        # Separator for better formatting
         self.separator = '\n' + "=" * 50
+
+        # Initialize DataFrame using user-provided file path and load_dataset method
+        self.file_path = input('Enter the path to your dataset: ')
+        if os.path.exists(self.file_path):
+            print(f'File found.{self.separator}')
+            self.df = self.load_dataset(self.file_path)
+        else:
+            print("Dataset not found. Please provide a valid path.")
 
         # Perform EDA tasks
         self.explore_data()
@@ -96,5 +104,4 @@ class EDA:
 
 # Example usage
 if __name__ == "__main__":
-    dataset_path = 'your_dataset.csv'  # Replace with your actual dataset path
-    eda_instance = EDA(dataset_path)
+    eda_instance = EDA()
